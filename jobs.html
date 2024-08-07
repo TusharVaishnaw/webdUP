@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaJam Coffee Bar - Jobs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the JavaJam Coffee Bar team! Apply for jobs, fill out the application form, and start your career in a welcoming environment.">
+    <link rel="stylesheet" href="javajam.css">
+    <script>
+        function validateForm() {
+            const name = document.getElementById('myName').value;
+            const email = document.getElementById('myEmail').value;
+            const phone = document.getElementById('myPhone').value;
+            const startDate = document.getElementById('myStartDate').value;
+            const experience = document.getElementById('myExperience').value;
+    
+            if (!name || !email || !phone || !startDate || !experience) {
+                alert('All fields are required.');
+                return false;
+            }
+    
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+    
+            const phonePattern = /^\d{10}$/;
+            if (!phonePattern.test(phone)) {
+                alert('Please enter a valid 10-digit phone number.');
+                return false;
+            }
+    
+            return true;
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                alert("Join our team! Fill out the application form below.");
+            }, 3000); // 3 seconds delay FRIEND 1
+        });
+    </script>
+</head>
+<body class="compact-layout">
+    <div id="wrapper">
+        <header id="top">
+
+        <header>
+            <h1>JavaJam Coffee Bar</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="cupcoffee"></div>
+            <h2>Jobs at JavaJam</h2>
+            <p>Want to work at JavaJam? Fill out the form below to start your application. All information is required.</p>
+            <form method="post" action="http://ajinkyaghadge.net/formhandle.php" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="myName">Name:</label>
+                    <input type="text" id="myName" name="myName" required>
+                </div>
+                <div class="form-group">
+                    <label for="myEmail">E-mail:</label>
+                    <input type="email" id="myEmail" name="myEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="myPhone">Phone:</label>
+                    <input type="tel" id="myPhone" name="myPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="myStartDate">Start Date:</label>
+                    <input type="date" id="myStartDate" name="myStartDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="myExperience">Experience:</label>
+                    <textarea id="myExperience" name="myExperience" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Apply Now" id="mySubmit">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2016 JavaJam Coffee House</p>
+            <p><a href="mailto:tyaa@ghadge.com">tyaa@ghadge.com</a></p>
+            <a href="#top" style="text-align: right"><h4>Back to Top</h4></a>
+
+        </footer>
+    </div>
+</body>
+</html>

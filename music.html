@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience live music at JavaJam Coffee Bar every first Friday night of the month. Enjoy performances by local artists in a cozy setting.">
+    <title>JavaJam Coffee Bar - Music</title>
+    <link rel="stylesheet" href="javajam.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll('main a');
+            links.forEach(function(link) {
+                link.addEventListener('mouseover', function() {
+                    alert("Concerts sell out quickly so act fast!");
+                });
+            });
+            alert("Don't miss our live music nights on the first Friday of every month!");
+        });
+    </script>    
+</head>
+<body class="compact-layout">
+    <div id="wrapper">
+        <header id="top">
+
+        <header>
+            <h1 style="padding-left: 50px;">JavaJam Coffee Bar</h1>
+        </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+
+                </ul>
+            </nav>
+
+        <main>
+            <div id="heroguitar" role="img" aria-label="Decorative image of a guitar"></div>
+            <h2>Music at JavaJam</h2>
+            <p>The first Friday night each month at JavaJam is a special night. Join us from 8 pm to 11 pm for some
+                <a href="#" onmouseover="alert('Concerts sell out quickly so act fast!');">music you won't want to miss!</a>
+            </p>            <section class="music">
+                <h3>
+                    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                    <h4>JANUARY</h4>
+                    <div class="details">
+                        <img src="images/melaniethumb.jpg" alt="Melanie Morris" class="floatleft">
+                        <p>Melanie Morris entertains with her melodic folk style.</p>
+                        <audio controls>
+                            <source src="media/melanie.mp3" type="audio/mpeg">
+                            <source src="media/melanie.ogg" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    
+                    <h4>FEBRUARY</h4>
+                    <div class="details">
+                        <img src="images/gregthumb.jpg" alt="Tahoe Greg" class="floatleft">
+                        <p>Tahoe Greg is back from his tour. New songs. New stories.</p>
+                        <audio controls>
+                            <source src="media/greg.mp3" type="audio/mpeg">
+                            <source src="media/greg.ogg" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+            </section>
+            <h3>JavaJam Theme Music</h3>
+            <audio controls loop autoplay>
+                <source src="media/lesson1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2016 JavaJam Coffee House</p>
+            <p><a href="mailto:tyaa@ghadge.com">tyaa@ghadge.com</a></p>
+            <a href="#top" style="text-align: right"><h4>Back to Top</h4></a>
+
+        </footer>
+    </div>
+</body>
+</html>
