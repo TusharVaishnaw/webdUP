@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaJam Coffee House - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to JavaJam Coffee House! Indulge in our locally roasted coffee and homemade pastries in a cozy, inviting atmosphere.">
+    <link rel="stylesheet" href="javajam.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#lastModified").html("This page was last modified on: " + document.lastModified);
+            alert("Welcome to JavaJam Coffee House! Don't miss our special offers and events.");
+        });
+    </script>
+    
+</head>
+<body class="compact-layout">
+    <div id="wrapper">
+        <header id="top">
+            <h1>JavaJam Coffee Bar</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="windingroad" role="img" aria-label="A winding road through a forest"></div>
+            <h2>Follow the Winding Road to JavaJam</h2>
+            <p>We're a little out of the way, but take a drive down <a href="https://www.google.com/maps/place/12010+Garrett+Bay+Rd,+Ellison+Bay,+WI+54210/@45.2551834,-87.071505,17z/data=!3m1!4b1!4m5!3m4!1s0x4d4d3d7894e4cb91:0x2f2548634b236b10!8m2!3d45.2551834!4d-87.071505?entry=ttu" target="_blank">Route 42</a> to JavaJam today! Indulge in our locally roasted free-trade coffee and home-made <a href="https://en.wikipedia.org/wiki/Pastry" target="_blank">pastries</a> . You'll feel right at home at JavaJam!</p>
+            <h3>JavaJam Coffee House Gallery:</h3>
+            <div class="image-gallery">
+            <!-- FRIEND 1 -->
+            <figure>
+                <img src="images/tea-coffee.jpg" alt="A cup of specialty coffee and tea at JavaJam Coffee House">
+                <figcaption>Specialty Coffee and Tea</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bagels.jpg" alt="Delicious bagels, muffins, and organic snacks at JavaJam Coffee House">
+                <figcaption>Bagels, Muffins, and Organic Snacks</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salads.jpg" alt="Fresh organic salads at JavaJam Coffee House">
+                <figcaption>Organic Salads</figcaption>
+            </figure>
+            <figure>
+                <img src="images/music.jpeg" alt="Live music and poetry readings at JavaJam Coffee House">
+                <figcaption>Music and Poetry Readings</figcaption>
+            </figure>
+            <figure>
+                <img src="images/open_mic.jpeg" alt="Open Mic Night at JavaJam Coffee House">
+                <figcaption>Open Mic Night</figcaption>
+            </figure>
+
+              </div>
+            <div>
+                <address>
+                    12010 Garette Bay Road<br>
+                    Ellison Bay, WI 54210<br>
+                    <a href="tel:888-555-5555">888-555-5555</a>
+                </address>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2016 JavaJam Coffee House</p>
+            <p><a href="mailto:tyaa@ghadge.com">tyaa@ghadge.com</a></p>
+            <div id="lastModified"></div>
+            <a href="#top" style="text-align: right"><h4>Back to Top</h4></a>
+        </footer>
+    </div>
+</body>
+</html>
