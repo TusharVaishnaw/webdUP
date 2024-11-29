@@ -32,4 +32,3 @@
    - **Description**: Cascading Style Sheets (CSS) is used for styling HTML elements.
    - **Why Used**: Provides a visually appealing and responsive interface for all user roles (admin, teacher, student).
 
-Each of these technologies plays a critical role in building a secure, scalable, and user-friendly assignment management system.
